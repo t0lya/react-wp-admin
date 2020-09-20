@@ -1,7 +1,11 @@
 {
   "name": "react-wp-admin",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "Wordpress Admin UI components written in React",
+  "keywords": [
+    "wordpress",
+    "react"
+  ],
   "main": "build/index.js",
   "module": "build/index.es.js",
   "files": [
@@ -10,7 +14,8 @@
   "scripts": {
     "build": "rollup -c",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "deploy-storybook": "storybook-to-ghpages"
   },
   "author": "Tony Le <tony.le@usa.com>",
   "license": "MIT",
@@ -45,11 +50,13 @@
     "@commitlint/config-conventional": "^11.0.0",
     "@icon/dashicons": "^0.9.0-alpha.3",
     "@rollup/plugin-commonjs": "^15.0.0",
+    "@rollup/plugin-image": "^2.0.5",
     "@rollup/plugin-node-resolve": "^9.0.0",
     "@storybook/addon-actions": "^6.0.21",
     "@storybook/addon-essentials": "^6.0.21",
     "@storybook/addon-links": "^6.0.21",
     "@storybook/react": "^6.0.21",
+    "@storybook/storybook-deployer": "^2.8.6",
     "@types/classnames": "^2.2.10",
     "@types/react": "^16.9.49",
     "@typescript-eslint/eslint-plugin": "^4.1.1",
